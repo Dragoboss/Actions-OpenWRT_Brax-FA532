@@ -17,7 +17,7 @@ on:
   workflow_dispatch:
 
 env:
-  REPO_URL: https://github.com/coolsnowwolf/lede
+  REPO_URL: https://github.com/Dragoboss/lede
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: ipq50xx_full.config
@@ -47,11 +47,6 @@ jobs:
         remove-android: 'true'
         remove-haskell: 'true'
         remove-docker-images: 'true'
-
-    - name: Space after
-      run: |
-        echo "Free space:"
-        df -h
 
     - name: Checkout
       uses: actions/checkout@main
