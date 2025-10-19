@@ -33,11 +33,6 @@ jobs:
     permissions: write-all
     runs-on: ubuntu-22.04
     steps:
-    - name: Space before
-      run: |
-        echo "Free space:"
-        df -h
-
     - name: Maximize build space
       uses: easimon/maximize-build-space@master
       with:

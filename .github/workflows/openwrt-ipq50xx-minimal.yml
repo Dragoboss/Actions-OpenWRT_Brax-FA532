@@ -20,7 +20,7 @@ env:
   REPO_URL: https://github.com/Dragoboss/lede
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: ipq50xx-minimal.config
+  CONFIG_FILE: ipq50xx_minimal.config
   DIY_P1_SH: diy-part1.sh
   DIY_P2_SH: diy-part2.sh
   UPLOAD_BIN_DIR: true
@@ -34,11 +34,6 @@ jobs:
     runs-on: ubuntu-22.04
 
     steps:
-    - name: Space before
-      run: |
-        echo "Free space:"
-        df -h
-
     - name: Maximize build space
       uses: easimon/maximize-build-space@master
       with:
