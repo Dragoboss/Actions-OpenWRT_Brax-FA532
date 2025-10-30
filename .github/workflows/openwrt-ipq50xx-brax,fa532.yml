@@ -10,7 +10,7 @@
 # See /LICENSE for more information.
 #
 
-name: OpenWrt Brax-FA532 Minimal
+name: OpenWrt IPQ5018-Brax,FA532
 
 on:
   repository_dispatch:
